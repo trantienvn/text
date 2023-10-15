@@ -1,0 +1,41 @@
+#option-bar .container {
+  display: flex;
+  flex-direction: column; }
+  #option-bar .container .setting-item {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 15px 2px 5px 2px; }
+    #option-bar .container .setting-item .setting-name {
+      color: black;
+      padding: 8px 5px;
+      width: 150px;
+      vertical-align: middle; }
+    #option-bar .container .setting-item .setting-value input[type="text"] {
+      width: 70px;
+      padding: 8px 5px;
+      border: 1px solid #999999;
+      border-radius: 3px; }
+    #option-bar .container .setting-item .setting-value input#custom-font-family {
+      width: 150px;
+      border: none;
+      background: transparent;
+      color: #b22222; }
+    #option-bar .container .setting-item .setting-value .pulldown {
+      padding: 8px 5px;
+      border: 1px solid #999999;
+      border-radius: 3px;
+      background-color: #fff; }
+    #option-bar .container .setting-item .setting-value .toggle {
+      margin: 8px 0px; }
+    #option-bar .container .setting-item .setting-value .color-pick {
+      width: 50px;
+      height: 36px;
+      margin: 0px 0px;
+      border: 1px solid black;
+      z-index: 10000;
+      cursor: pointer; }
+  #option-bar .container #font-family-setting .pulldown {
+    width: 180px; }
+  #option-bar .container #font-size-setting .pulldown {
+    width: 70px; }

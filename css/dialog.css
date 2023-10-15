@@ -1,0 +1,136 @@
+.dialog {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); }
+  .dialog .window {
+    /*
+        margin-left: auto;
+        margin-right: auto;
+        */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: #fff;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column; }
+    .dialog .window .topbar {
+      width: 100%;
+      min-height: 40px;
+      border-bottom: 1px solid #3079ed;
+      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .dialog .window .topbar .title {
+        width: 100%;
+        padding: 10px 10px 10px;
+        font-size: 130%;
+        color: #3079ed; }
+      .dialog .window .topbar .dialog-close-button {
+        font-family: Verdana;
+        font-size: 150%;
+        padding: 10px;
+        cursor: pointer;
+        color: #999; }
+    .dialog .window .main {
+      width: 100%;
+      padding: 0px 20px 20px;
+      overflow-y: auto; }
+    .dialog .window .bottombar {
+      width: 100%;
+      height: 70px;
+      padding: 10px 20px 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; }
+      .dialog .window .bottombar button {
+        margin-left: 15px; }
+
+#account-dialog .account-list .account-item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 5px;
+  border-bottom: 1px solid #ddd; }
+  #account-dialog .account-list .account-item .cloud-icon {
+    margin-right: 10px; }
+  #account-dialog .account-list .account-item .account-title {
+    width: 100%;
+    overflow-x: hidden; }
+    #account-dialog .account-list .account-item .account-title .title {
+      font-weight: normal; }
+
+/*
+  #find-dialog {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #eee;
+    border: 1px solid #ccc; }
+  
+    #find-dialog > div {
+      display: -webkit-box;
+    }
+  
+    #find-dialog input[type=text] {
+      padding: 5px 5px;
+      width: 200px;
+    }
+  
+    #find-dialog div.button {
+      min-width: 0px;
+      -webkit-border-radius: 0px;
+      margin-right: -1px;
+    }
+  
+    #find-dialog div.button img {
+      padding:7px 5px;
+      width: 20px;
+      float:left;
+      opacity:1.0;    
+    }
+  
+    #find-dialog div.dialog-close-button {
+      font-size: 150%;
+      cursor: pointer;
+      color: #999;
+      margin-left: 10px;
+      line-height: 27px;
+    }
+  
+  .found-text {
+    background-color: yellow;
+  }
+  
+  span.writebox-highlight {
+    background-color: #ddd;  
+  }
+  
+  span.writebox-highlight-focused {
+    background-color: yellow;  
+  }
+  
+  #contents-bg {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+    
+  #about-dialog h3 {
+    -webkit-margin-after: 0.2em;
+  }
+
+  #about-dialog ul {
+    -webkit-margin-before: 0em;
+  }
+
+  #about-dialog ul li {
+    margin-bottom: 3px;
+  }
+*/

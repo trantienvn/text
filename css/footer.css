@@ -1,0 +1,20 @@
+#editor-footer {
+  display: flex;
+  flex-direction: column; }
+  #editor-footer #processing-message {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.4em; }
+  #editor-footer #processing-message.processing {
+    background-color: #4d90fe;
+    color: #fff; }
+  #editor-footer #document-statistics {
+    text-align: center;
+    opacity: 0.7;
+    padding-right: 10px;
+    font-size: 1.05em; }

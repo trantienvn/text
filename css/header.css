@@ -1,0 +1,78 @@
+#header {
+  height: 40px;
+  display: flex; }
+  #header #menu {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    display: flex; }
+    #header #menu #new-button {
+      order: 1; }
+    #header #menu #load-button {
+      order: 2; }
+    #header #menu #filename {
+      order: 3;
+      color: #228be6;
+      line-height: 30px;
+      padding: 3px 6px;
+      white-space: nowrap;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center; }
+      #header #menu #filename div .storage-icon {
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        visibility: hidden; }
+      #header #menu #filename div .storage-icon.show {
+        visibility: visible; }
+      #header #menu #filename div span {
+        resize: none;
+        outline: none; }
+    #header #menu #recent-button {
+      order: 4; }
+    #header #menu #preview-markdown-button {
+      order: 5; }
+    #header #menu #feature-menu {
+      order: 6; }
+    #header #menu .command {
+      -webkit-app-region: no-drag;
+      color: #111; }
+    #header #menu .command:hover {
+      background-color: #ccc; }
+    #header #menu #recent-button ul {
+      width: 400px; }
+      #header #menu #recent-button ul li {
+        padding: 0; }
+        #header #menu #recent-button ul li .recent-item {
+          border-bottom: 1px solid #ccc; }
+          #header #menu #recent-button ul li .recent-item .storage-icon {
+            position: relative;
+            width: 18px;
+            height: 18px;
+            margin-left: 5px;
+            margin-right: 5px; }
+          #header #menu #recent-button ul li .recent-item .recent-title {
+            position: relative;
+            overflow-x: hidden; }
+      #header #menu #recent-button ul li:last-child .recent-item {
+        border-bottom: 0; }
+    #header #menu #sync-button {
+      order: 7;
+      color: #000;
+      background: #fff;
+      border-color: #228be6;
+      border-radius: 4;
+      margin: 5px 0px 5px 20px; }
+      #header #menu #sync-button span {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle; }
+  #header #preview-markdown-esc-message {
+    width: 100%;
+    color: #333;
+    line-height: 40px;
+    text-align: center; }

@@ -1,0 +1,124 @@
+#chooser-dialog {
+  padding: 50px 100px;
+  display: flex;
+  font-size: 14px; }
+  #chooser-dialog .window {
+    position: relative;
+    width: 100%;
+    border-radius: 0.5em;
+    margin-top: 0; }
+    #chooser-dialog .window .dialog-close-button {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      padding: 3px 12px;
+      font-size: 22px;
+      cursor: pointer; }
+    #chooser-dialog .window .main {
+      padding: 0;
+      overflow-y: hidden;
+      display: flex;
+      flex-grow: 1; }
+      #chooser-dialog .window .main .file-navigator {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1; }
+        #chooser-dialog .window .main .file-navigator .storage-menu {
+          width: 200px;
+          background-color: #f3f3f3;
+          border-radius: 0.5em; }
+          #chooser-dialog .window .main .file-navigator .storage-menu ul {
+            list-style-type: none;
+            padding: 50px 15px 0px 15px; }
+            #chooser-dialog .window .main .file-navigator .storage-menu ul li {
+              cursor: pointer;
+              display: flex;
+              flex-direction: row;
+              padding: 15px 5px;
+              border: 1px solid #f3f3f3; }
+              #chooser-dialog .window .main .file-navigator .storage-menu ul li img {
+                width: 20px;
+                height: 20px;
+                margin-top: -2px; }
+              #chooser-dialog .window .main .file-navigator .storage-menu ul li span {
+                padding-left: 5px; }
+            #chooser-dialog .window .main .file-navigator .storage-menu ul li.selection {
+              font-weight: bold;
+              border-radius: 0.2em;
+              border: 1px solid #999;
+              background-color: #ddd; }
+        #chooser-dialog .window .main .file-navigator .file-navigator-menu {
+          height: auto;
+          flex-grow: 1;
+          overflow-y: hidden;
+          display: flex;
+          flex-direction: column; }
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu .top-navigator {
+            width: 100%;
+            padding: 25px 20px 15px;
+            cursor: pointer;
+            font-size: 20px;
+            border-bottom: none; }
+            #chooser-dialog .window .main .file-navigator .file-navigator-menu .top-navigator span:hover {
+              text-decoration: underline; }
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself {
+            overflow-y: scroll; }
+            #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul {
+              width: 100%;
+              margin: 0px;
+              padding: 30px 15px 10px 15px;
+              list-style-type: none; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li {
+                line-height: 60px;
+                white-space: nowrap;
+                border-bottom: 1px solid #eee;
+                display: flex;
+                flex-direction: row;
+                cursor: pointer; }
+                #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li img {
+                  height: 22px;
+                  margin: 19px 10px 19px 10px; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li:first-child {
+                border-top: 1px solid #eee; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li:hover {
+                background-color: #eee; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li.loading {
+                cursor: default;
+                border: 0;
+                padding: 0px 15px;
+                line-height: 20px; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li.error-msg {
+                cursor: default;
+                color: #999;
+                border: 0; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li.loading:hover {
+                background-color: transparent; }
+              #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul li.error-msg:hover {
+                background-color: transparent; }
+            #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul.chooser-filelist[data-storage=local] li .file {
+              display: flex;
+              flex-direction: row;
+              flex-grow: 1; }
+            #chooser-dialog .window .main .file-navigator .file-navigator-menu .navigator-itself ul.chooser-filelist[data-storage=local] li button {
+              padding: 0px 15px;
+              margin: 12px 15px; }
+        #chooser-dialog .window .main .file-navigator .file-navigator-menu::-webkit-scrollbar {
+          width: 8px;
+          height: 13px; }
+        #chooser-dialog .window .main .file-navigator .file-navigator-menu::-webkit-scrollbar-thumb {
+          background: rgba(0, 0, 0, 0.2);
+          border: 1px solid #afafaf; }
+    #chooser-dialog .window .bottombar {
+      border-top: 1px solid #999;
+      padding: 18px 20px; }
+      #chooser-dialog .window .bottombar .chooser-save-form {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        #chooser-dialog .window .bottombar .chooser-save-form input {
+          flex-grow: 1;
+          border: 1px solid #9f9f9f;
+          padding: 3px 5px;
+          border-radius: 0.2em; }

@@ -1,0 +1,37 @@
+.pulldown {
+  cursor: pointer; }
+  .pulldown .label {
+    border-bottom: 1px solid #4f4f4f;
+    border: 1px solid transparent;
+    border-radius: 3px; }
+  .pulldown ul {
+    border: 1px solid #bbbbbb;
+    background: white;
+    padding: 10px 0px 5px;
+    margin: 0;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+    .pulldown ul li {
+      width: 100%;
+      padding: 0px 20px 0px 10px;
+      line-height: 2.4em;
+      list-style-type: none;
+      color: black;
+      white-space: nowrap;
+      cursor: pointer; }
+    .pulldown ul li:hover {
+      background: #eeeeee; }
+    .pulldown ul li[data-ignore-click=yes]:hover {
+      background: white;
+      cursor: default; }
+    .pulldown ul li.separation {
+      background: #bbb;
+      height: 1px;
+      margin: 4px 0px; }
+    .pulldown ul li img {
+      height: 16px;
+      vertical-align: middle;
+      margin-top: 7px;
+      margin-right: 8px;
+      float: left; }

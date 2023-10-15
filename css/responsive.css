@@ -1,0 +1,99 @@
+@media screen and (max-width: 800px) {
+  #header {
+    padding: 0px 10px; }
+  #window-close-button {
+    display: none; } }
+
+@media screen and (max-width: 620px) {
+  #main, .dialog, input, button {
+    font-size: 11pt;
+    font-weight: normal; }
+  .pulldown ul li {
+    line-height: 3em; }
+    .pulldown ul li img {
+      height: 20px;
+      margin-top: 12px;
+      margin-right: 12px; }
+  #menu .command img + span {
+    display: none; }
+  #recent-button {
+    display: none; }
+  #filename .storage-icon {
+    display: none; }
+  .dialog .window {
+    width: 300px; }
+    .dialog .window .bottombar {
+      height: 80px;
+      padding: 25px 20px; }
+  .responsive-dialog .window {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+    transform: translate(0, 0); }
+  #chooser-dialog {
+    padding: 10px; }
+    #chooser-dialog .window .main {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; }
+      #chooser-dialog .window .main .file-navigator {
+        width: 100%;
+        height: 100%;
+        flex-direction: column; }
+        #chooser-dialog .window .main .file-navigator .storage-menu {
+          order: 2;
+          width: 100%;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0; }
+          #chooser-dialog .window .main .file-navigator .storage-menu ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0; }
+            #chooser-dialog .window .main .file-navigator .storage-menu ul li {
+              flex: 1 0 30%;
+              margin-bottom: 0px;
+              padding: 0px 10px;
+              line-height: 36px;
+              border-top: 3px solid transparent;
+              color: #aaa;
+              align-items: center;
+              justify-content: center; }
+            #chooser-dialog .window .main .file-navigator .storage-menu ul li.selection {
+              color: black;
+              font-weight: normal;
+              border-top: 3px solid #4a5df1; }
+        #chooser-dialog .window .main .file-navigator .file-navigator-menu {
+          order: 1;
+          /*
+                        border: none;
+                        border-top: 1px solid #999;
+                        padding: 0px;
+                        */ }
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist {
+            /* padding: 0; */ }
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=dropbox] li,
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=googledrive] li {
+            /*
+                                padding-left: 10px;
+                                border-bottom: 1px solid #ddd;
+                                padding: 10px 0px 10px 10px;
+                                line-height: 30px;
+                                */
+            overflow: hidden; }
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=dropbox] li.loading, #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=dropbox] li.error-msg,
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=googledrive] li.loading,
+          #chooser-dialog .window .main .file-navigator .file-navigator-menu ul.chooser-filelist[data-storage=googledrive] li.error-msg {
+            border-bottom: none; } }
+
+@media screen and (max-width: 400px) {
+  #filename {
+    display: none; }
+  #menu div.flex {
+    display: block; }
+  #chooser-dialog .storage-menu ul li span {
+    display: none; } }

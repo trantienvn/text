@@ -1,0 +1,25 @@
+.side-bar {
+  position: absolute;
+  top: 0px;
+  right: -360px;
+  width: 360px;
+  height: 100%;
+  background-color: #f7f5f2;
+  box-shadow: 3px 2px 3px 4px #bbb;
+  overflow-y: scroll;
+  visibility: hidden; }
+  .side-bar .close-button {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px; }
+    .side-bar .close-button img {
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      border-radius: 3px; }
+    .side-bar .close-button img:hover {
+      background-color: #ddd; }
+  .side-bar .container {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px; }

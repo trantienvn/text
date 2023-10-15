@@ -1,0 +1,1 @@
+import AccountDialogContainer from"./account_dialog_container.js";var domContainer=document.querySelector("#account-dialog-container"),root=ReactDOM.createRoot(domContainer);root.render(React.createElement(AccountDialogContainer,null));
